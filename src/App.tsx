@@ -301,7 +301,7 @@ export default function App() {
     };
 
     fetchInitialData(); // รันครั้งแรกเมื่อเปิดหน้าเว็บ
-    const interval = setInterval(fetchNewData, 5000);
+    const interval = setInterval(fetchNewData, 1000);
     return () => clearInterval(interval);
   }, []);
 
